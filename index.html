@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Counter Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"
+        integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="w-screen min-h-screen p-10 bg-gray-100 text-slate-700" id="container">
+        <!-- header -->
+        <h1 class="max-w-md mx-auto text-center text-2xl font-bold">
+            Simple Counter Application
+        </h1>
+        <div class="p-4 w-[300px] space-y-5 bg-white rounded shadow">
+            <button class="bg-red-400 text-white px-3 py-2 rounded shadow" id="createCounter">Create Counter
+            </button>
+            <button class="bg-blue-400 text-white px-3 py-2 rounded shadow" id="resetBtn">Reset
+            </button>
+        </div>
+
+        <!-- counters -->
+        <div class="max-w-md mx-auto mt-10 space-y-5" id="counterComponent">
+            <div class="p-4 h-auto flex flex-col items-center justify-center space-y-5 bg-white rounded shadow">
+                <div class="text-2xl font-semibold" id="value">0</div>
+                <div class="flex space-x-3">
+                    <button class="bg-indigo-400 text-white px-3 py-2 rounded shadow" id="increament">
+                        Increment <span id="byIncreament">(1)</span>
+                    </button>
+                    <button class="bg-red-400 text-white px-3 py-2 rounded shadow" id="decreament">
+                        Decrement <span id="byDecrement">(1)</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
